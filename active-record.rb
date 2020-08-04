@@ -160,7 +160,6 @@ https://guides.rubyonrails.org/active_record_basics.html
 
 
 ALL
-
 restaurants = Restaurant.all
 # => SELECT * FROM restaurants
 
@@ -321,7 +320,7 @@ doctor.consultations.each do |consultation|
 end
 # => `Array` (`ActiveRecord::Relation`) of `Patient` instance
 
-USING :THROUGH
+USING THROUGH
 # app/models/doctor.rb
 class Doctor < ActiveRecord::Base
   has_many :interns
